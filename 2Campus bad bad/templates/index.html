@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Campus-打卡系統：打卡端</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>打卡端</h1>
+    <div>
+        <h2>選擇基地</h2>
+        <select id="base">
+            <option value="弘道基地">弘道基地</option>
+            <option value="吉林基地" selected>吉林基地</option>
+        </select>
+    </div>
+    <div>
+        <h2>輸入驗證碼</h2>
+        <input type="text" id="code" placeholder="驗證碼" oninput="validateCode()">
+        <button id="checkin-button" onclick="checkin()" disabled>打卡</button>
+    </div>
+
+    <script>
+        async function checkin() {
+            const base = document.getElementById('base').value;
+            const code = document.getElementById('code').value;
+
+            const response = await fetch('/checkin', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ base, code })
+            });
+
+            const data = await response.json();
+            alert(data.message);
+        }
+        
+        async function fetchCode() {
+            const response = await fetch('/api/get_code');
+            const data = await response.json();
+            currentCode_1 = data["弘道基地"].code;
+            currentCode_2 = data["吉林基地"].code;
+        }
+
+        function validateCode() {
+            const base = document.getElementById('base').value;
+            const codeInput = document.getElementById('code').value;
+            const checkinButton = document.getElementById('checkin-button');
+            
+            if (base === "弘道基地") {
+                currentCode = currentCode_1;
+            } else {
+                currentCode = currentCode_2;
+            }
+
+            if (codeInput === currentCode) {
+                checkinButton.disabled = false;
+            } else {
+                checkinButton.disabled = true;
+            }
+        }
+
+        setInterval(fetchCode, 5000); // 每30秒請求一次
+        fetchCode(); // 初始請求
+    </script>
+</body>
+</html>

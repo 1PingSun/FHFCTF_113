@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Campus-打卡系統：吉林基地</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div>
+        <h1>當前驗證碼（吉林基地）</h2>
+        <div style="display: flex; align-items: center;">
+            <h3>驗證碼：</h3>
+            <p id="current-code">Loading...</p>
+        </div>
+        <a href="/student" target="_blank">打卡端</a>
+    </div>
+
+    <script>
+        async function fetchCode() {
+            const response = await fetch('/api/get_code');
+            const data = await response.json();
+            document.getElementById('current-code').innerText = data["吉林基地"].code;
+        }
+
+        setInterval(fetchCode, 5000); // 每30秒請求一次
+        fetchCode(); // 初始請求
+    </script>
+</body>
+</html>
