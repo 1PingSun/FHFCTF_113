@@ -71,6 +71,18 @@
 3. 打開路徑就看到後半部的 Flag 了
     ![Screenshot 2024-12-22 at 00.00.17](https://hackmd.io/_uploads/ByaM8DVrJl.png)
 
+### Turtle? but not useful
+
+* Author: Ping
+* Flag: `FHFCTF{f1nd_7ur7l3}`
+
+1. 打開連結發現路徑為 `/page.html`
+2. 網頁中的三張照片路徑分別為 `/01_70.jpeg`、`/02_72.jpeg`、`/03_70.jpeg`
+3. 發現三張照片後面的數字疑似為 `FHF` 的 ASCII 編碼
+4. 進到 `/` 路徑，看到目錄下的所有檔案內容。
+    ![Screenshot 2024-12-29 at 21.47.06 Large](https://hackmd.io/_uploads/BkDWQRABye.png)
+5. 將各照片後面的數字分別進行 ASCII to Text，就得到 Flag 了。
+
 ### CGC revenge
 
 * Author: Ping
