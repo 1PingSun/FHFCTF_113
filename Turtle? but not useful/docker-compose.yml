@@ -1,0 +1,9 @@
+name: turtle
+services:
+  web:
+    build: 
+      context: ./nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/usr/share/nginx/html
