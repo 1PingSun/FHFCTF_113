@@ -30,9 +30,6 @@
 
 * Author: tong
 * Flag：`FHFCTF{I_hate_office365_and_word}`
-* File: [Hello Word.docx](./Hello Word/Hello Word.docx)
-
-1. 
 
 ## Forensic
 
