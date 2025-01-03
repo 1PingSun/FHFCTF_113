@@ -26,6 +26,22 @@
 5. 搜尋關鍵字「國防醫學院 圖書館」，驗證確實為該幅墨畫。
     ![Screenshot 2024-12-23 at 00.17.26 Large](https://hackmd.io/_uploads/rJE6snBrye.jpg)
 
+## Crypto
+
+### easyyyyyy~
+
+* Author: yn
+* Flag: `FHFCTF{t3_qelrdeq_t3_k33a3a_lk3_lc_qe3p3}`
+
+1.
+
+### 神奇之旅
+
+* Author: yn
+* Flag: `FHFCTF{Yakışıklı bir çocuktan hoşlanıyorum ve karın kasları var}`
+
+1. 
+
 ## Forensic
 
 ### New Year Gift
