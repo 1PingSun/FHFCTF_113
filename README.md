@@ -55,6 +55,14 @@
 
 說明：此題使用 LSB 把 Flag 藏起來，背景色為 #FF0000 而 Flag 顏色為 #FE0000
 
+### I am a dog
+
+* Author: tong
+* Flag：`FHFCTF{1_m155ed_the_reg1strat10n}`
+
+1. 打開 PDF 檔案後，看到最後一頁「團隊所有成員簽署」的後面有白色的文字
+2. 將文字複製後貼到記事本就看到是 Flag 了
+
 ### Hello Word
 
 * Author: tong
