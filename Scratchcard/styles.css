@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background: #f0f0f0;
+    font-family: sans-serif;
+  }
+  
+  .scratch-container {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .prize-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  
