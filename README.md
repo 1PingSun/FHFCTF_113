@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/4e48d1d5-9064-4eac-9c9e-5ad5a97a5b7d)# 113-1 復興期末考 Writeup
+# 113-1 復興期末考 Writeup
 
 [TOC]
 
