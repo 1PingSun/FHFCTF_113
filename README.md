@@ -60,6 +60,11 @@
 * Author: tong
 * Flag：`FHFCTF{I_hate_office365_and_word}`
 
+1. 用 Ｗord 打開檔案
+2. 打開檔案後開啟 Word 的「喜好設定」
+3. 進到「喜好設定」後，進入「檢視」把「隱藏文字」勾選起來
+4. 按「確定」後，就可以看到 Flag 了
+
 ## Web
 
 ### Scratchcard
@@ -67,7 +72,7 @@
 * Author: tong
 * Flag: `FHFCTF{5k1n_15_u51n6_css}`
 
-這題是一個刮刮樂遊戲，要把刮刮樂放在 CTFd 的主頁，但 Flag 在 js 檔裡面。
+這題是一個刮刮樂遊戲，要把刮刮樂放在 CTFd 的主頁，但 Flag 在 CSS 檔裡面。
 
 ### 🤖
 
