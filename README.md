@@ -2,7 +2,7 @@
 
 [TOC]
 
-## Misc
+## OSINT
 
 ### Not O^2
 
@@ -25,11 +25,6 @@
 4. 瀏覽搜尋結果發現為「以書養氣」四字，並掛於圖書館二樓牆面。
 5. 搜尋關鍵字「國防醫學院 圖書館」，驗證確實為該幅墨畫。
     ![Screenshot 2024-12-23 at 00.17.26 Large](https://hackmd.io/_uploads/rJE6snBrye.jpg)
-
-### Hello Word
-
-* Author: tong
-* Flag：`FHFCTF{I_hate_office365_and_word}`
 
 ## Forensic
 
@@ -59,6 +54,11 @@
     ![Screenshot 2024-12-21 at 23.52.21](https://hackmd.io/_uploads/ry-SNwNSyl.png)
 
 說明：此題使用 LSB 把 Flag 藏起來，背景色為 #FF0000 而 Flag 顏色為 #FE0000
+
+### Hello Word
+
+* Author: tong
+* Flag：`FHFCTF{I_hate_office365_and_word}`
 
 ## Web
 
