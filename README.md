@@ -62,6 +62,13 @@
 
 ## Web
 
+### Scratchcard
+
+* Author: tong
+* Flag: `FHFCTF{4c710n_15_u51n6_j5}`
+
+這題是一個刮刮樂遊戲，要把刮刮樂放在 CTFd 的主頁，但 Flag 在 js 檔裡面。
+
 ### 🤖
 
 * Author: Ping
