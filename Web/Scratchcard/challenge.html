@@ -1,0 +1,75 @@
+<div class="row">
+  <div class="col-md-6 offset-md-3">
+    <img class="w-100 mx-auto d-block" style="max-width: 500px;padding: 50px;padding-top: 14vh;"
+      src="/files/702d0af3834cba34cc792e5a0e762553/logo.png"></img>
+  </div>
+  <div>
+    <div class="scratch-container" id="scratch-container">
+      <link id="Scratchcard-css" rel="stylesheet" href="/files/assets/styles.css">
+      <div class="prize-text" id="prize-text">
+        Skeleton + ? + Action = Website
+      </div>
+      <canvas id="scratch-canvas"></canvas>
+      <script>
+        const container = document.getElementById('scratch-container');
+        const canvas = document.getElementById('scratch-canvas');
+        const ctx = canvas.getContext('2d');
+        const width = container.offsetWidth;
+        const height = container.offsetHeight;
+        canvas.width = width;
+        canvas.height = height;
+        ctx.fillStyle = '#ccc';
+        ctx.fillRect(0, 0, width, height);
+        ctx.lineJoin = 'round';
+        ctx.lineCap = 'round';
+        ctx.lineWidth = 15;
+        let isDrawing = false;
+        function getPosition(e) {
+          let x, y;
+          if (e.touches) {
+            const touch = e.touches[0];
+            x = touch.clientX - canvas.getBoundingClientRect().left;
+            y = touch.clientY - canvas.getBoundingClientRect().top;
+          } else {
+            x = e.clientX - canvas.getBoundingClientRect().left;
+            y = e.clientY - canvas.getBoundingClientRect().top;
+          }
+          return { x, y };
+        }
+        function startDrawing(e) {
+          e.preventDefault();
+          isDrawing = true;
+          const pos = getPosition(e);
+          ctx.beginPath();
+          ctx.moveTo(pos.x, pos.y);
+        }
+        function draw(e) {
+          if (!isDrawing) return;
+          const pos = getPosition(e);
+          ctx.globalCompositeOperation = 'destination-out';
+          ctx.lineTo(pos.x, pos.y);
+          ctx.stroke();
+        }
+        function endDrawing(e) {
+          e.preventDefault();
+          isDrawing = false;
+          ctx.closePath();
+        }
+        canvas.addEventListener('mousedown', startDrawing, false);
+        canvas.addEventListener('mousemove', draw, false);
+        canvas.addEventListener('mouseup', endDrawing, false);
+        canvas.addEventListener('mouseleave', endDrawing, false);
+        canvas.addEventListener('touchstart', startDrawing, false);
+        canvas.addEventListener('touchmove', draw, false);
+        canvas.addEventListener('touchend', endDrawing, false);
+        canvas.addEventListener('touchcancel', endDrawing, false);
+      </script>
+    </div>
+  </div>
+  <div>
+    <h3 class="text-center">
+      <p>113-1 資訊科技概論資安期末競賽</p>
+      <a href="https://discord.gg/PjJyX65s"><i class="fa-brands fa-discord"></i></a>&nbsp;
+    </h3>
+  </div>
+</div>

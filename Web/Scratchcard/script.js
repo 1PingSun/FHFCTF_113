@@ -61,4 +61,3 @@ canvas.addEventListener('touchmove', draw, false);
 canvas.addEventListener('touchend', endDrawing, false);
 canvas.addEventListener('touchcancel', endDrawing, false);
 
-// FHFCTF{4c710n_15_u51n6_j5}

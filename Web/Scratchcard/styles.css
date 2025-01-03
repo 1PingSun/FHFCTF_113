@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    background: #f0f0f0;
     font-family: sans-serif;
   }
   
@@ -33,4 +31,5 @@ body {
     left: 0;
     z-index: 2;
   }
-  
+
+// FHFCTF{5k1n_15_u51n6_css}
