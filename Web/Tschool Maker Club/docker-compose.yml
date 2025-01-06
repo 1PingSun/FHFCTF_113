@@ -1,0 +1,9 @@
+name: 'makerclub'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8001:80"
+    volumes:
+      - ./:/usr/share/nginx/html
+    restart: unless-stopped
