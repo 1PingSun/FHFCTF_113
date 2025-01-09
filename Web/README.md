@@ -33,7 +33,7 @@
     ![Screenshot 2024-12-29 at 21.47.06 Large](https://hackmd.io/_uploads/BkDWQRABye.png)
 5. 將各照片後面的數字分別進行 ASCII to Text，就得到 Flag 了。
 
-### CGC revenge
+### CSC revenge
 
 * Author: Ping
 * Flag: `FHFCTF{y0u_4r3_53r10u5_1n_cl455}`
